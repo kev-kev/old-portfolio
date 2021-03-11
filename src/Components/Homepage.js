@@ -9,18 +9,27 @@ import ProjectData from "../Assets/ProjectData"
 const renderCard = (project) => {
   if(project){
     return (
-      <Card className="mt-3" style={{width: "30rem", height: "20rem"}} key={project.name} text="muted">
-        <Card.Img style={{width: "100px", height: "auto"}} variant="top" src={project.image} />
-        <Card.Body>
-          <Card.Title>{project.name}</Card.Title>
-          <Card.Text>{project.notes}</Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info" href={project.url}>
-            Go somewhere
-          </Button>
-        </Card.Footer>
-      </Card>
+      <div className="flip-card">
+        <Card className="flip-card-inner" key={project.name}>
+          <div className="flip-card-front">
+            <Card.Img style={{width: "100px", height: "auto"}} variant="top" src={project.image} />
+            <Card.Body>
+              <Card.Title>{project.name}</Card.Title>
+              <Card.Text className="text-truncate">{project.notes}</Card.Text>
+            </Card.Body>
+            {/* <Card.Footer>
+              <Button variant="info" href={project.url}>
+                Go somewhere
+              </Button>
+            </Card.Footer> */}
+          </div>
+          <div className="flip-card-back">
+          <Card.Body>
+              <Card.Text>jellooooooo</Card.Text>
+            </Card.Body>
+          </div>
+       </Card>
+      </div>
     );
   }
 };
