@@ -4,32 +4,27 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import ProjectData from "../Assets/ProjectData"
+import ProjectData from "../Assets/ProjectData";
 
 const renderCard = (project) => {
-  if(project){
+  if (project) {
     return (
-      <div className="flip-card">
-        <Card className="flip-card-inner" key={project.name}>
-          <div className="flip-card-front">
-            <Card.Img style={{width: "100px", height: "auto"}} variant="top" src={project.image} />
-            <Card.Body>
-              <Card.Title>{project.name}</Card.Title>
-              <Card.Text className="text-truncate">{project.notes}</Card.Text>
-            </Card.Body>
-            {/* <Card.Footer>
-              <Button variant="info" href={project.url}>
-                Go somewhere
-              </Button>
-            </Card.Footer> */}
-          </div>
-          <div className="flip-card-back">
-          <Card.Body>
-              <Card.Text>jellooooooo</Card.Text>
-            </Card.Body>
-          </div>
-       </Card>
-      </div>
+      <Card className="h-100" key={project.name}>
+        <Card.Img
+          style={{ width: "7rem", height: "auto" }}
+          variant="top"
+          src={project.image}
+        />
+        <Card.Body className="">
+          <Card.Title>{project.name}</Card.Title>
+          <Card.Text className="w-100">{project.notes}</Card.Text>
+        </Card.Body>
+        {/* <Card.Footer>
+            <Button variant="info" href={project.url}>
+              Go somewhere
+            </Button>
+          </Card.Footer> */}
+      </Card>
     );
   }
 };
@@ -39,25 +34,26 @@ const renderCardRows = (data) => {
   var i;
   for (i = 0; i < data.length; i += 2) {
     rows.push(
-      <Row key={data[i].name}>
-        <Col>
-          {renderCard(data[i])}      
-         </Col>
-         <Col>   
-          {renderCard(data[i + 1])}
-        </Col>
+      <Row className="h-100 my-3" key={data[i].name}>
+        <Col>{renderCard(data[i])}</Col>
+        <Col>{renderCard(data[i + 1])}</Col>
       </Row>
-    )
+    );
   }
-  return rows
+  return rows;
 };
 
 export class Homepage extends Component {
   render() {
     return (
-      <Container fluid>
-        {renderCardRows(ProjectData)}
-      </Container>
+      <div>
+        <h3 style={{ textAlign: "center" }} className="font-weight-normal">
+          kevin&#39;s portfolio
+        </h3>
+        <Container className="w-75 mt-5">
+          {renderCardRows(ProjectData)}
+        </Container>
+      </div>
     );
   }
 }

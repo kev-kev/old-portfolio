@@ -1,4 +1,4 @@
-import Kirby from "./kirby.png"
+import Kirby from "./kirby.png";
 
 const projectData = [
   {
@@ -37,4 +37,37 @@ const projectData = [
   },
 ];
 
-export default projectData
+// const projectData = [
+//   {
+//     name: "Verbose",
+//     url: "https://www.github.com",
+//     notes: "short text",
+//     image: Kirby,
+//   },
+//   {
+//     name: "Salad Bowl",
+//     url: "https://www.github.com",
+//     notes: "short text",
+//     image: Kirby,
+//   },
+//   {
+//     name: "Let's Eat!",
+//     url: "https://www.github.com",
+//     notes: "short text",
+//     image: Kirby,
+//   },
+//   {
+//     name: "Drumblr",
+//     url: "https://www.github.com",
+//     notes: "short text",
+//     image: Kirby,
+//   },
+//   {
+//     name: "Super Pet Bros",
+//     url: "https://www.github.com",
+//     notes: "short text",
+//     image: Kirby,
+//   },
+// ];
+
+export default projectData;
