@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './Assets/scss/custom.scss';
 import Homepage from './Components/Homepage'
 
 function App() {

@@ -1,30 +1,16 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import ProjectData from "../Assets/ProjectData";
+import ProjectCard from "./ProjectCard";
+import Header from "./Header";
+import MailToUI from "../../node_modules/mailtoui/dist/mailtoui-min.js";
 
 const renderCard = (project) => {
   if (project) {
     return (
-      <Card className="h-100" key={project.name}>
-        <Card.Img
-          style={{ width: "7rem", height: "auto" }}
-          variant="top"
-          src={project.image}
-        />
-        <Card.Body className="">
-          <Card.Title>{project.name}</Card.Title>
-          <Card.Text className="w-100">{project.notes}</Card.Text>
-        </Card.Body>
-        {/* <Card.Footer>
-            <Button variant="info" href={project.url}>
-              Go somewhere
-            </Button>
-          </Card.Footer> */}
-      </Card>
+      <ProjectCard className="h-100" key={project.name} project={project} />
     );
   }
 };
@@ -42,20 +28,25 @@ const renderCardRows = (data) => {
   }
   return rows;
 };
+const Homepage = () => {
+  useEffect(() => {
+    MailToUI.run();
+  }, []);
 
-export class Homepage extends Component {
-  render() {
-    return (
-      <div>
-        <h3 style={{ textAlign: "center" }} className="font-weight-normal">
-          kevin&#39;s portfolio
-        </h3>
-        <Container className="w-75 mt-5">
-          {renderCardRows(ProjectData)}
-        </Container>
-      </div>
-    );
-  }
-}
+  return (
+    <Container className="w-75 mt-5">
+      <Row>
+        <Col>
+          <Header />
+        </Col>
+      </Row>
+      <h4 className="mt-4">personal projects</h4>
+      {renderCardRows(ProjectData)}
+      <hr className="mt-5 mb-n2" />
+      <h4 className="mt-5">bootcamp projects</h4>
+      {renderCardRows(ProjectData)}
+    </Container>
+  );
+};
 
 export default Homepage;
