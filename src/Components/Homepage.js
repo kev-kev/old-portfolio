@@ -10,7 +10,7 @@ import MailToUI from "../../node_modules/mailtoui/dist/mailtoui-min.js";
 const renderCard = (project) => {
   if (project) {
     return (
-      <ProjectCard className="h-100" key={project.name} project={project} />
+      <ProjectCard className="h-100" key={project.name} project={project}/>
     );
   }
 };
@@ -28,6 +28,7 @@ const renderCardRows = (data) => {
   }
   return rows;
 };
+
 const Homepage = () => {
   useEffect(() => {
     MailToUI.run();
