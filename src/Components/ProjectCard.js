@@ -19,9 +19,9 @@ const ProjectCard = (props) => {
         variant="top"
         src={props.project.image}
       />
-      <Card.Body>
+      <Card.Body className="cardBody">
         <Card.Title>{props.project.name}</Card.Title>
-        <Card.Text className="w-100">{props.project.notes}</Card.Text>
+        <Card.Text className="">{props.project.notes}</Card.Text>
       </Card.Body>
     </Card>
   )

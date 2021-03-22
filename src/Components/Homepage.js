@@ -41,10 +41,10 @@ const Homepage = () => {
           <Header />
         </Col>
       </Row>
-      <h4 className="mt-4">personal projects</h4>
+      <h4 className="mt-4 header">personal projects</h4>
       {renderCardRows(ProjectData)}
-      <hr className="mt-5 mb-n2" />
-      <h4 className="mt-5">bootcamp projects</h4>
+      <hr className="mt-5 mb-n2 hr" />
+      <h4 className="mt-5 header">bootcamp projects</h4>
       {renderCardRows(ProjectData)}
     </Container>
   );
