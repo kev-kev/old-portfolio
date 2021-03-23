@@ -12,6 +12,10 @@ const ProjectCard = (props) => {
     setActive(false);
   };
 
+  const handleOnClick = () => {
+    console.log(props.url)
+  }
+
   return (
     <Card
       className={active ? "activeCard" : "inactiveCard"}
@@ -24,6 +28,7 @@ const ProjectCard = (props) => {
           backgroundImage: `url(${props.project.image})`,
         }}
       />
+      <div className="overlay" onClick={handleOnClick}>visit project</div>
       <Card.Body className="cardBody">
         <Card.Title>{props.project.name}</Card.Title>
         <Card.Text className="">{props.project.notes}</Card.Text>

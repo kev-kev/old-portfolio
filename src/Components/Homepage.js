@@ -20,7 +20,7 @@ const renderCardRows = (data) => {
   var i;
   for (i = 0; i < data.length; i += 2) {
     rows.push(
-      <Row className="my-3" key={data[i].name}>
+      <Row className="my-3 p-3" key={data[i].name}>
         <Col>{renderCard(data[i])}</Col>
         <Col>{renderCard(data[i + 1])}</Col>
       </Row>
@@ -35,20 +35,18 @@ const Homepage = () => {
   }, []);
 
   return (
-    <Container className="pt-5">
-      <Row>
-        <Col>
-          <Header />
-        </Col>
-      </Row>
-      <div className="cardGrid">
-        <h4 className="mt-4 header">personal projects</h4>
+    <>
+      <Header/>
+      <Container>
+        <h4 className="title">personal projects</h4>
         {renderCardRows(personalProjects)}
-        <hr className="mt-5 mb-n2 hr" />
-        <h4 className="mt-5 header">bootcamp projects</h4>
+      </Container>
+      <hr/>
+      <Container >   
+        <h4 className="title">bootcamp projects</h4>
         {renderCardRows(bootcampProjects)}
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };
 

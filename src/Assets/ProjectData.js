@@ -10,7 +10,7 @@ const personalProjects = [
   {
     name: "Verbose",
     url: "https://www.github.com/kev-kev/verbose",
-    notes: "Vocabulary learning app built with React Bootstrap",
+    notes: "Vocabulary learning app built with React Bootstrap and the Owlbot API",
     image: Verbose,
   },
   {
