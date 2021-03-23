@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 const ProjectCard = (props) => {
   const [active, setActive] = useState(false);
@@ -12,13 +13,17 @@ const ProjectCard = (props) => {
     setActive(false);
   };
 
-  const handleOnClick = () => {
-    console.log(props.url)
-  }
+  const renderButton = () => {
+    return (
+      <Button variant="warning" className="cardBtn" href={props.project.url} target="_blank">
+        visit project
+      </Button>
+    );
+  };
 
   return (
     <Card
-      className={active ? "activeCard" : "inactiveCard"}
+      className={active ? "activeCard" : "inactiveCard "}
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
     >
@@ -28,7 +33,8 @@ const ProjectCard = (props) => {
           backgroundImage: `url(${props.project.image})`,
         }}
       />
-      <div className="overlay" onClick={handleOnClick}>visit project</div>
+      {active && renderButton()}
+
       <Card.Body className="cardBody">
         <Card.Title>{props.project.name}</Card.Title>
         <Card.Text className="">{props.project.notes}</Card.Text>

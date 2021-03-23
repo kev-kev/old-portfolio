@@ -24,18 +24,28 @@ hr {
 .inactiveCard .cardImg {
   transition: opacity 0.5s, filter 0.5s;
   opacity: 1;
-  filter: brightness(100%);
+  filter: brightness(1);
 }
 
 .activeCard {
   transform: scale(1.03);
   transition: transform 1s;
+
+  .cardImg {
+    filter: brightness(.8);
+    transition: opacity 0.5s, filter 0.5s;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.activeCard .cardImg {
-  transition: opacity 0.5s, filter 0.5s;
-  opacity: 0.5;
-  filter: brightness(50%);
+.cardBtn {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
 }
 
 .header {
@@ -55,9 +65,11 @@ hr {
 .cardBody::-webkit-scrollbar {
   -webkit-appearance: none;
 }
+
 .cardBody::-webkit-scrollbar:vertical {
   width: 0.5rem;
 }
+
 .cardBody::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background-color: rgba(196, 196, 196, 0.5);
