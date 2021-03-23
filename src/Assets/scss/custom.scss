@@ -2,6 +2,8 @@ $theme-colors: (
   "primary": #aebbc7,
 );
 
+$body-bg: rgb(59, 59, 59);
+
 .inactiveCard {
   transition: transform 1s;
   transform: scale(1);
@@ -26,10 +28,7 @@ $theme-colors: (
 .cardBody {
   background-color: rgba(39, 39, 39, 0.801);
   color: white;
-}
-
-body {
-  background-color: rgb(59, 59, 59) !important;
+  height: 15rem;
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";

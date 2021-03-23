@@ -1,73 +1,57 @@
-import Kirby from "./kirby.png";
+import Drumblr from "./drumblr-image.png"
+import SuperPetBros from "./superPetBros.png"
+import MyIslandTracker from "./acnh-tracker.png"
+import Verbose from "./verbose.png"
+import LetsEat from "./lets-eat.png"
+import SaladBowl from "./saladBowl.png"
 
-const projectData = [
+const personalProjects = [
   {
     name: "Verbose",
     url: "https://www.github.com",
     notes: "Vocabulary learning app built with React Bootstrap",
-    image: Kirby,
+    image: Verbose,
   },
   {
     name: "Salad Bowl",
-    url: "https://www.github.com",
+    url: "https://www.github.com/kev-kev/salad-bowl-frontend",
     notes:
       "Online multiplayer game made using websockets and React. Like monikers but BETTER.",
-    image: Kirby,
+    image: SaladBowl,
   },
   {
     name: "Let's Eat!",
-    url: "https://www.github.com",
+    url: "https://github.com/kev-kev/lets-eat",
     notes:
       "Web app to help you and your partner plan meals. Frontend: React with context and Material-UI, Backend: Ruby on Rails ",
-    image: Kirby,
+    image: LetsEat,
+  },
+  
+];
+
+const bootcampProjects = [
+  {
+    name: "MyIslandTracker",
+    url: "https://github.com/kev-kev/acnh-tracker",
+    notes:
+      "A tracking tool for the video game Animal Crossing New Horizons.",
+    image: MyIslandTracker,
+    walkthrough: "https://www.notion.so/kevkev/Animal-Crossing-Tracker-a4c84c1041544c2486799b86a85ec6a8"
   },
   {
     name: "Drumblr",
-    url: "https://www.github.com",
+    url: "https://github.com/kev-kev/drumblr-frontend",
     notes:
       "Browser-based drum machine made with React and the Web Drum Sequencer library",
-    image: Kirby,
+    image: Drumblr,
   },
   {
     name: "Super Pet Bros",
-    url: "https://www.github.com",
+    url: "https://github.com/kev-kev/superPetBros",
     notes:
       "Create your very own virtual pet and battle it against others. Made with vanilla JS and RoR backend.",
-    image: Kirby,
+    image: SuperPetBros,
   },
-];
+]
 
-// const projectData = [
-//   {
-//     name: "Verbose",
-//     url: "https://www.github.com",
-//     notes: "short text",
-//     image: Kirby,
-//   },
-//   {
-//     name: "Salad Bowl",
-//     url: "https://www.github.com",
-//     notes: "short text",
-//     image: Kirby,
-//   },
-//   {
-//     name: "Let's Eat!",
-//     url: "https://www.github.com",
-//     notes: "short text",
-//     image: Kirby,
-//   },
-//   {
-//     name: "Drumblr",
-//     url: "https://www.github.com",
-//     notes: "short text",
-//     image: Kirby,
-//   },
-//   {
-//     name: "Super Pet Bros",
-//     url: "https://www.github.com",
-//     notes: "short text",
-//     image: Kirby,
-//   },
-// ];
-
-export default projectData;
+export { personalProjects, bootcampProjects };
