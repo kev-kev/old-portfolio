@@ -18,18 +18,10 @@ const ProjectCard = (props) => {
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
     >
-      {/* <Card.Img
-        style={{ backgroundColor: "pink" }}
-        variant="top"
-        src={props.project.image}
-      /> */}
       <div
+        className="cardImg"
         style={{
-          background: `url(${props.project.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "0% 25%",
-          width: "100%",
-          height: "300px",
+          backgroundImage: `url(${props.project.image})`,
         }}
       />
       <Card.Body className="cardBody">
