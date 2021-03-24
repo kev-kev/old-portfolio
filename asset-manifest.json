@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b5f48b44.chunk.css",
+    "main.js": "/portfolio/static/js/main.639ba82d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.639ba82d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.1fa43a16.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1fa43a16.js.map",
+    "static/js/2.27191df7.chunk.js": "/portfolio/static/js/2.27191df7.chunk.js",
+    "static/js/2.27191df7.chunk.js.map": "/portfolio/static/js/2.27191df7.chunk.js.map",
+    "static/js/3.def9b1de.chunk.js": "/portfolio/static/js/3.def9b1de.chunk.js",
+    "static/js/3.def9b1de.chunk.js.map": "/portfolio/static/js/3.def9b1de.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.b5f48b44.chunk.css.map": "/portfolio/static/css/main.b5f48b44.chunk.css.map",
+    "static/js/2.27191df7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.27191df7.chunk.js.LICENSE.txt",
+    "static/media/acnh-tracker.bce6a65d.png": "/portfolio/static/media/acnh-tracker.bce6a65d.png",
+    "static/media/drumblr-image.7d64032e.png": "/portfolio/static/media/drumblr-image.7d64032e.png",
+    "static/media/lets-eat.969b2ffd.png": "/portfolio/static/media/lets-eat.969b2ffd.png",
+    "static/media/lunchtime.74fc83f5.png": "/portfolio/static/media/lunchtime.74fc83f5.png",
+    "static/media/saladBowl.a23862ad.png": "/portfolio/static/media/saladBowl.a23862ad.png",
+    "static/media/superPetBros.fb727e7d.png": "/portfolio/static/media/superPetBros.fb727e7d.png",
+    "static/media/verbose.b47cc5de.png": "/portfolio/static/media/verbose.b47cc5de.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fa43a16.js",
+    "static/js/2.27191df7.chunk.js",
+    "static/css/main.b5f48b44.chunk.css",
+    "static/js/main.639ba82d.chunk.js"
+  ]
+}
