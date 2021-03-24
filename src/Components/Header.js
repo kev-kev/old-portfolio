@@ -2,17 +2,18 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="header" >
+    <div className="header">
       <h2>kevin&#39;s portfolio</h2>
       <p>
-        hey 👋, i'm kevin! <br />
+        hey, i'm kevin!😁 / 😷 / 👋 / 😊 <br />
         software engineer and web developer curretly seeking entry-level
         opportunities <br />
-        you can check out some of my projects below. drop me an email if you
-        have any questions, yo! <br />
-        kevkev out! 😤
+        you can check out some of my work here <br />
+        if you want to reach out, please email me at kevin.clark93@gmail.com or
+        click the link below
+        <br />
       </p>
-      <div className="links">
+      <div>
         <a href="https://docs.google.com/document/d/1jXL2Dp3AsqTthjeNM_speCZ7vte5kLclZF9JUXBnZMQ/edit?usp=sharing">
           resume
         </a>{" "}

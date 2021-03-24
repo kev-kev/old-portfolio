@@ -36,13 +36,13 @@ const Homepage = () => {
 
   return (
     <>
-      <Header/>
+      <Header />
       <Container>
         <h4 className="title">personal projects</h4>
         {renderCardRows(personalProjects)}
       </Container>
-      <hr/>
-      <Container >   
+      <hr className="hr" />
+      <Container>
         <h4 className="title">bootcamp projects</h4>
         {renderCardRows(bootcampProjects)}
       </Container>

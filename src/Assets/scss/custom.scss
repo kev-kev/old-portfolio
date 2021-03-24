@@ -1,12 +1,22 @@
 $theme-colors: (
   "primary": #aebbc7,
+  "info": #396c9c,
 );
 
 $body-bg: rgb(59, 59, 59);
 
-hr {
-  background-color: white;
+.hr {
+  background-color: #396c9c;
   max-width: 90%;
+  height: 0.1rem;
+}
+
+.header {
+  align-items: "left";
+  color: white;
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-bottom: 3rem;
 }
 
 .inactiveCard {
@@ -32,7 +42,7 @@ hr {
   transition: transform 1s;
 
   .cardImg {
-    filter: brightness(.8);
+    filter: brightness(0.8);
     transition: opacity 0.5s, filter 0.5s;
     opacity: 0.6;
     display: flex;
@@ -46,13 +56,6 @@ hr {
   left: 50%;
   top: 30%;
   transform: translate(-50%, -50%);
-}
-
-.header {
-  align-items: "left";
-  color: white;
-  margin-top: 5rem;
-  margin-left: 6rem;
 }
 
 .cardBody {

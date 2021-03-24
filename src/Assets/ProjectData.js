@@ -4,14 +4,16 @@ import MyIslandTracker from "./acnh-tracker.png";
 import Verbose from "./verbose.png";
 import LetsEat from "./lets-eat.png";
 import SaladBowl from "./saladBowl.png";
-import LunchTime from "./lunchtime.png"
+import LunchTime from "./lunchtime.png";
 
 const personalProjects = [
   {
     name: "Verbose",
     url: "https://www.github.com/kev-kev/verbose",
-    notes: "Vocabulary learning app built with React Bootstrap and the Owlbot API",
+    notes:
+      "Vocabulary learning app built with React Bootstrap and the Owlbot API",
     image: Verbose,
+    inProgress: false,
   },
   {
     name: "Salad Bowl",
@@ -19,6 +21,7 @@ const personalProjects = [
     notes:
       "Online multiplayer game made using websockets and React. Submit words, act them out, and guess them!",
     image: SaladBowl,
+    inProgress: true,
   },
   {
     name: "Let's Eat!",
@@ -26,12 +29,14 @@ const personalProjects = [
     notes:
       "Web app to help you and your partner plan meals. Frontend: React with context and Material-UI, Backend: Ruby on Rails",
     image: LetsEat,
+    inProgress: false,
   },
   {
     name: "lunchtime",
     url: "https://github.com/kev-kev/lunchtime",
     notes: "Top-down pixel shooter game, made with Phaser + ES6 + Webpack",
     image: LunchTime,
+    inProgress: true,
   },
 ];
 
@@ -41,6 +46,7 @@ const bootcampProjects = [
     url: "https://github.com/kev-kev/acnh-tracker",
     notes: "A tracking tool for the video game Animal Crossing New Horizons.",
     image: MyIslandTracker,
+    inProgress: false,
     walkthrough:
       "https://www.notion.so/kevkev/Animal-Crossing-Tracker-a4c84c1041544c2486799b86a85ec6a8",
   },
@@ -50,6 +56,7 @@ const bootcampProjects = [
     notes:
       "Browser-based drum machine made with React and the Web Drum Sequencer library.",
     image: Drumblr,
+    inProgress: false,
   },
   {
     name: "Super Pet Bros",
@@ -57,6 +64,7 @@ const bootcampProjects = [
     notes:
       "Create your very own virtual pet and battle it against others. Vanilla JS frontend and Ruby on Rails backend",
     image: SuperPetBros,
+    inProgress: false,
   },
 ];
 

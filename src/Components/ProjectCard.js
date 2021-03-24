@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Badge from "react-bootstrap/Badge";
 
 const ProjectCard = (props) => {
   const [active, setActive] = useState(false);
@@ -15,8 +16,13 @@ const ProjectCard = (props) => {
 
   const renderButton = () => {
     return (
-      <Button variant="warning" className="cardBtn" href={props.project.url} target="_blank">
-        visit project
+      <Button
+        variant="info"
+        className="cardBtn"
+        href={props.project.url}
+        target="_blank"
+      >
+        Visit Project
       </Button>
     );
   };
@@ -36,7 +42,16 @@ const ProjectCard = (props) => {
       {active && renderButton()}
 
       <Card.Body className="cardBody">
-        <Card.Title>{props.project.name}</Card.Title>
+        <Card.Title className="d-flex">
+          {props.project.name}
+          <small>
+            {props.project.inProgress && (
+              <Badge className="ml-2" variant="info" pill>
+                In Progress
+              </Badge>
+            )}
+          </small>
+        </Card.Title>
         <Card.Text className="">{props.project.notes}</Card.Text>
       </Card.Body>
     </Card>
