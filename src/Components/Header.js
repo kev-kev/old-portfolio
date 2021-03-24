@@ -7,9 +7,9 @@ const Header = () => {
       <p>
         hey, i'm kevin!😁 / 😷 / 👋 / 😊 <br />
         software engineer and web developer curretly seeking entry-level
-        opportunities <br />
+        opportunities in NYC, New Jersey, and remote positions <br />
         you can check out some of my work here <br />
-        if you want to reach out, please email me at kevin.clark93@gmail.com or
+        if you want to reach out, you can email me at kevin.clark93@gmail.com or
         click the link below
         <br />
       </p>
