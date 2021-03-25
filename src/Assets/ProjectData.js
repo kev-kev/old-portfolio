@@ -16,20 +16,20 @@ const personalProjects = [
     inProgress: false,
   },
   {
-    name: "Salad Bowl",
-    url: "https://www.github.com/kev-kev/salad-bowl-frontend",
-    notes:
-      "Online multiplayer game made using websockets and React. Submit words, act them out, and guess them!",
-    image: SaladBowl,
-    inProgress: true,
-  },
-  {
     name: "Let's Eat!",
     url: "https://github.com/kev-kev/lets-eat",
     notes:
       "Web app to help you and your partner plan meals. Frontend: React with context and Material-UI, Backend: Ruby on Rails",
     image: LetsEat,
     inProgress: false,
+  },
+  {
+    name: "Salad Bowl",
+    url: "https://www.github.com/kev-kev/salad-bowl-frontend",
+    notes:
+      "Online multiplayer game made using websockets and React. Submit words, act them out, and guess them!",
+    image: SaladBowl,
+    inProgress: true,
   },
   {
     name: "lunchtime",
