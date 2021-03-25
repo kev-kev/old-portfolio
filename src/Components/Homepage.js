@@ -7,23 +7,14 @@ import ProjectCard from "./ProjectCard";
 import Header from "./Header";
 import MailToUI from "../../node_modules/mailtoui/dist/mailtoui-min.js";
 
-const renderCard = (project) => {
-  if (project) {
-    return (
-      <ProjectCard className="h-100" key={project.name} project={project} />
-    );
-  }
-};
-
-const renderCardRows = (data) => {
+const renderCards = (data) => {
   const rows = [];
   var i;
-  for (i = 0; i < data.length; i += 2) {
+  for (i = 0; i < data.length; i++) {
     rows.push(
-      <Row className="my-3" key={data[i].name}>
-        <Col>{renderCard(data[i])}</Col>
-        <Col>{renderCard(data[i + 1])}</Col>
-      </Row>
+      <Col key={data[i].name} className="my-2" xs={12} sm={6} md={4}>
+        <ProjectCard className="h-100" key={data[i].name} project={data[i]} />
+      </Col>
     );
   }
   return rows;
@@ -35,19 +26,27 @@ const Homepage = () => {
   }, []);
 
   return (
-    <Container>
-      <Row>
+    <Container fluid>
+      <Row className="pl-3">
         <Header />
       </Row>
       <Row>
-        <Container className="p-0">
-          <h4 className="title">personal projects</h4>
-          {renderCardRows(personalProjects)}
+        <Container fluid>
+          <Row className="pl-3">
+            <h4 className="title">personal projects</h4>
+          </Row>
+          <Row>{renderCards(personalProjects)}</Row>
         </Container>
+      </Row>
+      <Row className="pt-4">
         <hr className="hr" />
-        <Container className="p-0">
-          <h4 className="title">bootcamp projects</h4>
-          {renderCardRows(bootcampProjects)}
+      </Row>
+      <Row>
+        <Container fluid>
+          <Row className="pl-3">
+            <h4 className="title">bootcamp projects</h4>
+          </Row>
+          <Row>{renderCards(bootcampProjects)}</Row>
         </Container>
       </Row>
     </Container>
