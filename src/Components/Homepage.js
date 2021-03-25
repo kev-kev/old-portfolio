@@ -12,7 +12,7 @@ const renderCards = (data) => {
   var i;
   for (i = 0; i < data.length; i++) {
     rows.push(
-      <Col key={data[i].name} className="my-2" xs={12} sm={6} md={4}>
+      <Col key={data[i].name} className="my-2" xs={12} sm={6} md={6} lg={4}>
         <ProjectCard className="h-100" key={data[i].name} project={data[i]} />
       </Col>
     );
@@ -26,7 +26,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <Container fluid>
+    <Container fluid className="p-5">
       <Row className="pl-3">
         <Header />
       </Row>
