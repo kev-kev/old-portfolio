@@ -1,3 +1,5 @@
 ### My portfolio
 
-My personal portfolio, built with React.
+My responsive personal portfolio, built with React
+
+You can visit the app at https://kev-kev.github.io/portfolio/
