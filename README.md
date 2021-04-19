@@ -1,5 +1,11 @@
-### My portfolio
+## My portfolio
 
 My responsive personal portfolio, built with React
 
-You can visit the app at https://kev-kev.github.io/portfolio/
+![Screenshot](/public/screenshot.png)
+
+You can visit the app [here](https://kev-kev.github.io/portfolio/)
+
+- After cloning, run with `npm start`
+
+- Deploy changes with `npm run deploy`
