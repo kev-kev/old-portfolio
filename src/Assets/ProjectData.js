@@ -43,7 +43,7 @@ const personalProjects = [
 const bootcampProjects = [
   {
     name: "MyIslandTracker",
-    url: "https://github.com/kev-kev/acnh-tracker",
+    url: "https://github.com/kev-kev/acnh_tracker",
     notes: "A tracking tool for the video game Animal Crossing New Horizons.",
     image: MyIslandTracker,
     inProgress: false,

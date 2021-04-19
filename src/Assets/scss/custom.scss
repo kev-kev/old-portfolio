@@ -1,12 +1,14 @@
+$info-color: #396c9c;
+
 $theme-colors: (
   "primary": #aebbc7,
-  "info": #396c9c,
+  "info": $info-color,
 );
 
 $body-bg: rgb(59, 59, 59);
 
 .hr {
-  background-color: #396c9c;
+  background-color: $info-color;
   height: 0.1rem;
   width: 95%;
 }
