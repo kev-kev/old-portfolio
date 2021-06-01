@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0b7f2980.chunk.css",
-    "main.js": "/portfolio/static/js/main.7eb8ecc2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7eb8ecc2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.3d62cfe9.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3d62cfe9.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.1fa43a16.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.1fa43a16.js.map",
     "static/js/2.3e213f0d.chunk.js": "/portfolio/static/js/2.3e213f0d.chunk.js",
@@ -14,6 +14,7 @@
     "static/js/2.3e213f0d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3e213f0d.chunk.js.LICENSE.txt",
     "static/media/acnh-tracker.bce6a65d.png": "/portfolio/static/media/acnh-tracker.bce6a65d.png",
     "static/media/drumblr-image.7d64032e.png": "/portfolio/static/media/drumblr-image.7d64032e.png",
+    "static/media/gameoflife.12b91ffd.png": "/portfolio/static/media/gameoflife.12b91ffd.png",
     "static/media/lets-eat.969b2ffd.png": "/portfolio/static/media/lets-eat.969b2ffd.png",
     "static/media/lunchtime.74fc83f5.png": "/portfolio/static/media/lunchtime.74fc83f5.png",
     "static/media/saladBowl.a23862ad.png": "/portfolio/static/media/saladBowl.a23862ad.png",
@@ -24,6 +25,6 @@
     "static/js/runtime-main.1fa43a16.js",
     "static/js/2.3e213f0d.chunk.js",
     "static/css/main.0b7f2980.chunk.css",
-    "static/js/main.7eb8ecc2.chunk.js"
+    "static/js/main.3d62cfe9.chunk.js"
   ]
 }
