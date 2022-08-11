@@ -17,7 +17,7 @@ const Header = () => {
         <br />
       </p>
       <div>
-        <a href="https://docs.google.com/document/d/1jXL2Dp3AsqTthjeNM_speCZ7vte5kLclZF9JUXBnZMQ/edit?usp=sharing">
+        <a href="https://docs.google.com/document/d/1dSCuesJ64mctEorvD4bx-TAfX8gHLXgbcqijyxFNfG8/edit?usp=sharing">
           resume
         </a>{" "}
         | <a href="https://github.com/kev-kev/">github</a> |{" "}

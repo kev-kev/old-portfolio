@@ -5,8 +5,17 @@ import Verbose from "./verbose.png";
 import LetsEat from "./lets-eat.png";
 import SaladBowl from "./saladBowl.png";
 import LunchTime from "./lunchtime.png";
+import GameOfLife from "./gameoflife.png";
+import Holler from "./holler.png"
 
 const personalProjects = [
+  {
+    name: "Holler",
+    url: "https://github.com/kev-kev/holler-app",
+    notes: "Twitter clone made with Ruby on Rails and Bootstrap",
+    image: Holler,
+    inProgress: false
+  },
   {
     name: "Verbose",
     url: "https://www.github.com/kev-kev/verbose",
@@ -27,7 +36,7 @@ const personalProjects = [
     name: "Salad Bowl",
     url: "https://www.github.com/kev-kev/salad-bowl-frontend",
     notes:
-      "Online multiplayer game made using websockets and React. Submit words, act them out, and guess them!",
+      "Online multiplayer game made using Websockets and React. Submit words, act them out, and guess them!",
     image: SaladBowl,
     inProgress: true,
   },
@@ -37,6 +46,14 @@ const personalProjects = [
     notes: "Top-down pixel shooter game, made with Phaser + ES6 + Webpack",
     image: LunchTime,
     inProgress: true,
+  },
+  {
+    name: "Conway's Game of Life",
+    url: "https://github.com/kev-kev/game-of-life",
+    notes:
+      "An implementation of Conway's Game of Life. Created using HTML5 Canvas",
+    image: GameOfLife,
+    inProgress: false,
   },
 ];
 
