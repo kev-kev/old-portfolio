@@ -10,6 +10,14 @@ import Holler from "./holler.png"
 
 const personalProjects = [
   {
+    name: "Let's Eat!",
+    url: "https://github.com/kev-kev/lets-eat",
+    notes:
+      "Web app to help you and your partner plan meals. Frontend: React with context and Material-UI, Backend: Ruby on Rails",
+    image: LetsEat,
+    inProgress: false,
+  },
+  {
     name: "Holler",
     url: "https://github.com/kev-kev/holler-app",
     notes: "Twitter clone made with Ruby on Rails and Bootstrap",
@@ -22,14 +30,6 @@ const personalProjects = [
     notes:
       "Vocabulary learning app built with React Bootstrap and the Owlbot API",
     image: Verbose,
-    inProgress: false,
-  },
-  {
-    name: "Let's Eat!",
-    url: "https://github.com/kev-kev/lets-eat",
-    notes:
-      "Web app to help you and your partner plan meals. Frontend: React with context and Material-UI, Backend: Ruby on Rails",
-    image: LetsEat,
     inProgress: false,
   },
   {
@@ -55,9 +55,6 @@ const personalProjects = [
     image: GameOfLife,
     inProgress: false,
   },
-];
-
-const bootcampProjects = [
   {
     name: "MyIslandTracker",
     url: "https://github.com/kev-kev/acnh_tracker",
@@ -85,4 +82,4 @@ const bootcampProjects = [
   },
 ];
 
-export { personalProjects, bootcampProjects };
+export { personalProjects };

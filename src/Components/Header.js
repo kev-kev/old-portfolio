@@ -6,7 +6,7 @@ const Header = () => {
       <h2>kevin&#39;s portfolio</h2>
       <p>
         hey, i'm kevin! 👋 😷 <br />
-        software engineer and web developer currently seeking entry-level
+        software engineer and web developer currently seeking
         opportunities in NYC, New Jersey, and remote positions <br />
         if you'd like to reach out, you can{" "}
         <a class="mailtoui" href="mailto:kevin.clark93@gmail.com">
