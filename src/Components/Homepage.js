@@ -32,7 +32,7 @@ const Homepage = () => {
       <Row>
         <Container fluid>
           <Row className="pl-3">
-            <h4 className="title">personal projects</h4>
+            <h4 className="title">my projects</h4>
           </Row>
           <Row>{renderCards(personalProjects)}</Row>
         </Container>
